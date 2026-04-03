@@ -74,22 +74,21 @@ The project follows a structured machine learning pipeline:
 
 ---
 
-## 🤖 Models Used
-
+## Models Used
 ### 1. Logistic Regression
+Baseline model for binary classification.
 
-- Baseline model for binary classification  
-- Applied **class weighting** to address class imbalance  
+Applied class weighting (class_weight='balanced') to address the significant class imbalance.
 
-### 2. Random Forest Classifier
+### 2. Decision Tree Classifier
+Used to capture non-linear decision boundaries within the health metrics.
 
-- Ensemble model to capture non-linear relationships  
-- Helps reduce overfitting compared to single decision trees  
+Provides high interpretability for clinical risk factors.
 
-### 3. Gradient Boosting / XGBoost
+### 3. Random Forest Classifier
+An ensemble method used to improve accuracy and reduce the risk of overfitting inherent in single decision trees.
 
-- Focuses on improving errors from previous models  
-- Typically performs well on structured/tabular data  
+Processes multiple decision trees to produce a more robust prediction.
 
 ---
 
